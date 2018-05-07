@@ -178,12 +178,12 @@ print(model)
 criterion = nn.MSELoss(size_average=True)
 optimizer = torch.optim.Adadelta(model.parameters(), lr=0.5)
 
-# Initialize the hidden layer during training, but keep it for later prediction.
+# Initialize hidden layer during training, but keep it for later prediction.
 hidden = model.init_hidden()
 
 # Train the model on 500 epochs
 # Ideally this number is tuned precisely
-NUM_EPOCHS = 500
+NUM_EPOCHS = 50
 for i in range(NUM_EPOCHS):
     def closure():
         model.zero_grad()
