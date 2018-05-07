@@ -1,0 +1,11 @@
+project_token: 700cd7ac3c3e7045482fcfe8
+name: cryptodemo
+jobs:
+  - job_id: 97876b3e-2bc2-4c03-b22b-7b7816c7803a
+    language: python
+    name: Main
+    entrypoint: main.py
+    resources:
+      limits:
+        cpu: 6
+        memory: 2Gi
